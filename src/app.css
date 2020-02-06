@@ -1,0 +1,12 @@
+body{
+	font-family: 'Open Sans Condensed';
+}
+
+.center{
+	display: flex;
+	justify-content: center;
+}
+
+button{
+	cursor: pointer;
+}

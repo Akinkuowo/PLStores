@@ -51,6 +51,10 @@ class Menu extends React.Component{
         }
     }
 
+    // HandleShopRouting  = () => {
+
+    // }
+
     render(){
         return (
             <div className="menu">

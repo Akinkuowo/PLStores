@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 // import {ReactComponent as Logo } from '../../images/crown.svg'
 import logo from '../../images/Logo.png'
-
 import './header.css'
 
 const Header = () => {
@@ -16,8 +15,11 @@ const Header = () => {
            <Link className="option" to="/shop">
                 SHOP
            </Link>
-           <Link className="option" to="/shop">
+           <Link className="option" to="/contact">
                 CONTACT 
+           </Link>
+           <Link className="option" to="/signin">
+               SIGN IN 
            </Link>
        </div>
     </div>

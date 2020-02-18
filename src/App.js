@@ -8,6 +8,7 @@ import HomePage from './Page/HomePage/homePage';
 import Hats from './Page/HomePage/Hats/hats';
 import ShopPage from './Page/ShopPage/shopPage';
 import Header from './components/Header/header';
+import SignIn_and_register from './Page/SignIn_and_register/signIn_and_register';
 
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
 				<Route exact path="/" component={HomePage} />
 				<Route  path="/shop/hats" component={Hats} />
 				<Route path="/shop" component={ShopPage} />
+				<Route path="/signin" component={SignIn_and_register} />
 		   </div>	
 		   
 		   );

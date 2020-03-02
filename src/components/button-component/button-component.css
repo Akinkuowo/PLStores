@@ -9,7 +9,7 @@
     background-color: black;
     color: white;
     text-transform: uppercase;
-    font-family: 'Open Sans Condensed';
+    font-family:  "Dosis","Open Sans",sans-serif;
     font-weight: bolder;
     border: none;
     cursor: pointer; 
@@ -21,3 +21,16 @@
     border: 1px solid black;
   }
   
+ .isGoogleSignedIn{
+    background-color: #4285f4;
+    color: white;
+    margin-left: 10px;
+    padding: 0 15px 0 15px;
+  }
+
+  .isGoogleSignedIn:hover{
+      background-color: #357ae8;
+      border: none;
+      
+  }
+

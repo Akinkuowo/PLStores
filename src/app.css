@@ -1,5 +1,5 @@
 body{
-	font-family: 'Open Sans Condensed';
+	font-family:  "Dosis","Open Sans",sans-serif;
 	padding: 20px 60px;
 }
 
@@ -10,4 +10,8 @@ body{
 
 button{
 	cursor: pointer;
+}
+
+* {
+	box-sizing: border-box;
 }

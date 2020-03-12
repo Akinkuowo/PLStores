@@ -5,7 +5,6 @@ import Menu from '../../components/Menu-Item/Menu/menu';
 
 
 const HomePage = (props) => {
-    console.log(props)
     return (
         <div className="homepage">
            <Menu />

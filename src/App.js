@@ -9,7 +9,7 @@ import Hats from './Page/HomePage/Hats/hats';
 import ShopPage from './Page/ShopPage/shopPage';
 import Header from './components/Header/header';
 import SignIn_and_register from './Page/SignIn_and_register/signIn_and_register';
-import { auth } from './firebase/firebase';
+import { auth, createUserProfileDocument  } from './firebase/firebase';
 
 
 class App extends React.Component {
@@ -24,12 +24,9 @@ class App extends React.Component {
 	unsubscribeFromAuth = null;
 
 	componentWillMount(){
-		this.unsubscribeFromAuth =	auth.onAuthStateChanged(user => {
-			this.setState({
-				currentUser: user,
-			})
+		this.unsubscribeFromAuth =	auth.onAuthStateChanged(async user => {
+			createUserProfileDocument(user);
 
-			console.log(user)
 		})
 	}
 
@@ -43,7 +40,7 @@ class App extends React.Component {
 				<Header currentUser={this.state.currentUser}/>
 				<Route exact path="/" component={HomePage} />
 				<Route  path="/shop/hats" component={Hats} />
-				<Route path="/shop" component={ShopPage} />
+				<Route exact path="/shop" component={ShopPage} />
 				<Route path="/signin" component={SignIn_and_register} />
 		   </div>	
 		   
